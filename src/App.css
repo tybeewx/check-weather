@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton&display=swap');
 
 body {
-    
 }
 
 .wrapper {
-background: linear-gradient(to right, #a2dffc, #e74c3c);
+background: linear-gradient(to right, #a2dffc, #f6aeff);
 height: 100vh;
 display: flex;
 justify-content: center;
@@ -16,24 +15,26 @@ align-items: center;
 height: 90vh;
 background: transparent;
 box-shadow: 0px 23px 60px 13px rgba(0,0,0,0.75);
-width: 90%;
-margin: 0 auto;
+width: auto;
 }
 
 .title-container {
 height: 90vh;
 background: url("img/bg.jpg") center center no-repeat;
-background-size: cover;
+background-size: auto;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-color: rgb(58, 62, 82);
+color: rgb(37, 43, 71);
+
 }
 
 .title-container__title {
-font-size: 35px;
+font-size: 55px;
 text-align: auto;
+text-shadow: 6px 6px 4px #fdc0eb;
+padding-bottom: 150px;
 letter-spacing: 2px;
 line-height: 1.3;
 font-family: 'Alfa Slab One', cursive;
@@ -42,6 +43,7 @@ font-family: 'Alfa Slab One', cursive;
 .title-container__subtitle {
 font-style: italic;
 font-weight: 100;
+font-size: 40px;
 letter-spacing: 1px;
 line-height: 1.5;
 font-weight: bold;
@@ -49,35 +51,30 @@ font-family: "Merriweather", serif;
 }
 
 .form-container {
+background: url("img/bg2.jpg") center center no-repeat;
 background-color: #466481;
 height: 90vh;
 padding-top: 100px;
 padding-left: 50px;
 
 }
-
 input[type="text"] {
 background-color: transparent;
 border: 0;
-border-bottom: solid 2px #f16051;
+border-bottom: solid 2px #2d0080;
 width: 30%;
 padding-bottom: 4px;
-color: #fff !important;
+padding-top: 4px;
+padding-left: 20px;
+color: #000 !important;
 font-weight: lighter;
 letter-spacing: 2px;
-margin-bottom: 30px;
-margin-right: 20px;
+margin-bottom: flex;
+margin-right: flex;
 font-size: 20px;
 }
 
-input[type="text"] { 
-    outline: none;
-}
 
-input:-webkit-autofill {
-    webkit-box-shadow: 0 0 0 30px #090e13 inset;
-    webkit-text-fill-color: #fff !important;
-}
 
 button {
 border: 0;
@@ -88,7 +85,7 @@ font-weight: lighter;
 letter-spacing: 1px;
 font-size: 15px;
 cursor: pointer;
-background-color: #f16051;
+background-color: #2d0080;
 color: #fff;
 font-weight: 100;
 }
@@ -105,9 +102,9 @@ letter-spacing: 1px;
 }
 
 .weather__key {
-color: #f16051;
+color: #2d0080;
 border-bottom: solid 2px rgba(255,255,255,0.06);
-padding: 20px 0 20px 0;
+padding: 10px 0 10px 0;
 font-weight: 400;
 }
 
@@ -117,13 +114,13 @@ border: 0;
 
 .weather__value {
 color: #fff;
-font-weight: 200;
+font-weight: 600;
 }
 
 .weather__error {
-color: #f16051;
+color: #2d0080;
 font-size: 15px;
 padding: 15px;
 letter-spacing: 1px;
-font-weight: 200;
+font-weight: 400;
 }
